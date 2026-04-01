@@ -27,13 +27,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#fbfbfd] text-[#1d1d1f] font-sans">
       {/* Minimal Header */}
-      <header className="py-8 px-6 border-b border-[#f5f5f7] bg-white/80 backdrop-blur-md sticky top-0 z-50">
+      <header className="py-4 px-6 border-b border-[#f5f5f7] bg-white/80 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <Image
             src="/logo.png"
             alt="Logo"
-            width={140}
-            height={140}
+            width={100}
+            height={100}
             className="object-contain"
             priority
           />
