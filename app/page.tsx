@@ -12,13 +12,15 @@ const galleryImages = [
   "/STAGE_17.png",
   "/STAGE_13.png",
   "/STAGE_110.png",
-  "/STAGE_15.png",
+  "/STAGE_69.png",
   "/STAGE_16.png",
-  "/STAGE_11.png",
+  "/STAGE_15.png",
   "/STAGE_14.png",
   "/STAGE_111.png",
   "/STAGE_112.png",
   "/STAGE_113.png",
+  "/STAGE_67.png",
+  "/STAGE_11.png",
 ];
 
 export default function Home() {
@@ -210,13 +212,13 @@ export default function Home() {
 
 function PriceListRow({ paket }: { paket: TuningPaket }) {
   return (
-    <div className="bg-white rounded-[2.5rem] p-7 md:p-10 shadow-[0_2px_16px_rgba(0,0,0,0.03)] border border-[#f5f5f7] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] transition-all duration-500">
+    <div className="bg-white rounded-[2.5rem] p-6 md:p-10 shadow-[0_2px_16px_rgba(0,0,0,0.03)] border border-[#f5f5f7] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] transition-all duration-500">
       <div className="flex flex-col gap-6">
         {/* Header: Name and Price */}
-        <div className="flex flex-row justify-between items-start gap-2">
+        <div className="flex flex-row justify-between items-start gap-4">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col items-start">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1d1d1f] leading-tight">
+              <h3 className="text-xl md:text-3xl font-bold text-[#1d1d1f] leading-tight tracking-tight">
                 {paket.name}
               </h3>
               {paket.isStage1 && (
@@ -248,7 +250,7 @@ function PriceListRow({ paket }: { paket: TuningPaket }) {
           </div>
 
           <div className="flex flex-col items-end gap-1 shrink-0">
-            <div className="text-2xl md:text-4xl font-bold text-[#1d1d1f] whitespace-nowrap">
+            <div className="text-xl md:text-4xl font-bold text-[#1d1d1f] whitespace-nowrap">
               {paket.isStage1 ? "ab " : ""}
               {paket.preisEUR} EUR
             </div>
