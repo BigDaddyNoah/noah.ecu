@@ -42,7 +42,7 @@ export const mockTuningPakete: TuningPaket[] = [
     name: "Stage 1",
     beschreibung:
       "Unsere Stage 1 Softwareoptimierung bietet maximale Performance bei höchster Zuverlässigkeit. Spürbare Leistungssteigerung und verbessertes Ansprechverhalten.",
-    preisEUR: 299,
+    preisEUR: 350,
     dauerMin: 180,
     isStage1: true,
     aktiv: true,
@@ -104,6 +104,6 @@ export const stage1Addons: Addon[] = [
 export function calculateStage1Price(
   selectedAddons: Addon[]
 ): number {
-  const basePrice = 299;
+  const basePrice = 350;
   return basePrice + selectedAddons.reduce((sum, addon) => sum + addon.preisEUR, 0);
 }
